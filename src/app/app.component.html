@@ -1,2 +1,5 @@
-<ap-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/773px-Sultan_the_Barbary_Lion.jpg" description="Leao"></ap-photo>
-<ap-photo url="https://camo.githubusercontent.com/487bf6ea4e08a90cb171cfcada2fcfb266dd69620b0dfb2cae34ee57d41f583c/68747470733a2f2f6a736f6e706c616365686f6c6465722e74797069636f64652e636f6d2f6d6f636b656e642e737667" description="Logo"></ap-photo>
+<ap-photo
+  *ngFor="let photo of photos"
+  [url]="photo.url"
+  [description]="photo.description">
+</ap-photo>
