@@ -5,7 +5,7 @@
       type="search"
       class="rounded"
       placeholder="Search..."
-      (keyup)="observavelFiltro(buscaDescricao.value)"
+      (keyup)="debounce.next(buscaDescricao.value)"
       autofocus />
   </form>
 </div>
