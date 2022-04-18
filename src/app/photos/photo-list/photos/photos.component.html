@@ -1,0 +1,15 @@
+<p class="text-center text-muted" *ngIf="!photos.length">
+  Desculpe, não encontramos uma foto com este termo.
+</p>
+
+<ul class="list-unstyled">
+  <li class="row" *ngFor="let cols of rows">
+    <div *ngFor="let photo of cols" class="col-4">
+      <ap-photo
+        [url]="photo.url"
+        [description]="photo.description">
+      </ap-photo>
+    </div>
+
+  </li>
+</ul>
